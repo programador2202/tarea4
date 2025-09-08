@@ -11,6 +11,8 @@ INSERT INTO categorias (nombre) VALUES
 ('Comunicación'),
 ('Computación');
 
+SELECT*FROM categorias;
+
 CREATE TABLE subcategorias (
     idsubcategoria INT AUTO_INCREMENT PRIMARY KEY,
     idcategoria INT NOT NULL,

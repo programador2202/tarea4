@@ -6,7 +6,12 @@
     <a href="<?= base_url("categorias"); ?>" class="btn btn-secondary btn-sm">Volver</a>
   </div>
 
-  <form method="POST" action="<?= base_url('categorias/actualizar/' . $categoria['idcategoria']) ?>">
+  <form method="POST" action="<?= base_url('categorias/actualizar') ?>">
+
+    <!-- Esta caja actua como contenedor para la PK -->
+    <input type="hidden" name="idcategoria" value="<?= $categoria['idcategoria'] ?>">
+
+    <?= csrf_field(); ?>
     <div class="card">
       <div class="card-body">
         <div class="mb-3">
@@ -22,7 +27,7 @@
         </div>
       </div>
       <div class="card-footer text-end">
-        <button type="reset" class="btn btn-sm btn-outline-secondary">Cancelar</button>
+        <a href="<?= base_url('categorias') ?>" class="btn btn-sm btn-outline-secondary">Cancelar</a>
         <button type="submit" class="btn btn-sm btn-primary">Actualizar</button>
       </div>
     </div>

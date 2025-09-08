@@ -3,7 +3,7 @@
 <div class="container mt-2">
   <div class="my-2">
     <h4>Lista de Libros</h4>
-    <a href="<?= base_url("categorias/crear");   ?> " class="btn btn-primary">Registrar</a>
+    <a href="<?= base_url("categorias/crear");   ?> " class="btn btn-primary" enctype="multipart/form-data">Registrar</a>
   </div>
 
 <div class="table-responsive">

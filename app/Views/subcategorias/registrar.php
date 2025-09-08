@@ -6,7 +6,7 @@
     <a href="<?= base_url("subcategorias"); ?>" class="btn btn-secondary btn-sm">Volver</a>
   </div>
 
-  <form method="POST" action="<?= base_url('subcategorias/registrar') ?>" enctype="multipart/form-data">
+  <form method="POST" action="<?= base_url('subcategorias/guardar') ?>" enctype="multipart/form-data">
     <div class="card">
       <div class="card-body">
         <div class="mb-3">

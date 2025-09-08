@@ -52,7 +52,7 @@ class EditorialController extends BaseController
     public function editar($id = null): string
     {
         $editorial = new Editoriales();
-        $datos['editorial'] = $editorial->find($id);
+        $datos['ideditorial'] = $editorial->find($id);
 
         $datos['header'] = view('Layouts/header');
         $datos['footer'] = view('Layouts/footer');

@@ -7,12 +7,15 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-//Rutas: Categorias
 $routes->get('/categorias', 'CategoriaController::index');
-$routes->get('/categorias/crear', 'CategoriaController::crear'); //Renderiza el FORM
+$routes->get('/categorias/crear', 'CategoriaController::crear');
+$routes->post('/categorias/registrar', 'CategoriaController::registrar');
 $routes->get('/categorias/editar/(:num)', 'CategoriaController::editar/$1');
-$routes->post('/categorias/actualizar/(:num)', 'CategoriaController::actualizar/$1');
-$routes->post('/categorias/guardar', 'CategoriaController::registrar'); //<form method="POST">
+$routes->post('/categorias/actualizar', 'CategoriaController::actualizar/$1');
+$routes->get('/categorias/borrar/(:num)', 'CategoriaController::borrar/$1');
+
+
+
 
 
 
@@ -20,7 +23,8 @@ $routes->post('/categorias/guardar', 'CategoriaController::registrar'); //<form 
 $routes->get('/subcategorias', 'SubcategoriaController::index');
 $routes->get('/subcategorias/crear', 'SubcategoriaController::crear'); // Renderiza el FORM
 $routes->get('/subcategorias/editar/(:num)', 'SubcategoriaController::editar/$1');
-$routes->post('/subcategorias/guardar', 'SubcategoriaController::registrar'); // <form method="POST">
+$routes->post('/subcategorias/guardar', 'SubcategoriaController::registrar');  
+$routes->post('/Subcategorias/actualizar/(:num)', 'SubcategoriaController::actualizar/$1');
 $routes->get('/subcategorias/borrar/(:num)', 'SubcategoriaController::borrar/$1');
 
 

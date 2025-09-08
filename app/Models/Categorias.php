@@ -5,8 +5,9 @@ use CodeIgniter\Model;
 
 class Categorias extends Model{
 
-  protected $table = 'categorias';
-  protected $primaryKey = "idcategoria";
-  protected $allowedFields = ["nombre"];
+protected $table = 'categorias';
+protected $primaryKey = "idcategoria";
+protected $allowedFields = ["nombre"];
+
 
 }

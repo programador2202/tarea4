@@ -7,6 +7,6 @@ class Editoriales extends Model{
 
   protected $table = 'editoriales';
   protected $primaryKey = "ideditorial";
-  protected $allowedFields = ["empres","nacionalidad"];
+  protected $allowedFields = ["empresa","nacionalidad"];
 
 }
